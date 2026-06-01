@@ -1,0 +1,27 @@
+Solution .htaccess Not Work
+
+1. htaccess do not have permission access
+   $ cd /etc/apache2
+   $ sudo nano apache2.conf
+     Setting :
+     <Directory /var/www>
+  	  // Change
+  	  AllowOverride None  --> AllowOverride All
+     </Directory>
+    $ sudo systemctl restart apache2
+
+2. If Directory Public Hidden / do not show on the server 
+   $ sudo a2enmod rewrite
+   $ sudo systemctl restart apache2
+
+3. If Still Error (Internal Server Error)
+   $ cd /etc/apache2
+   $ sudo nano apache2.conf
+     Setting :
+     // Change
+     <Directory /var/www>     ---> <Directory /var/www/html> 
+  	      AllowOverride All
+     </Directory>
+    $ sudo systemctl restart apache2
+
+
