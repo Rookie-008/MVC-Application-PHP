@@ -2,7 +2,7 @@
 
 	class Home {
 		public function page() {
-			echo "About/page";
+			echo "about/page";
 		}
 	}
 	
