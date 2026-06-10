@@ -25,7 +25,7 @@
 			}
 		}
 
-		public function querry($querry) {
+		public function query($query) {
 			$this->statement = $this->dbHandler->prepare($query);
 		}
 
