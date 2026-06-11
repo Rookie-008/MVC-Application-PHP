@@ -14,7 +14,7 @@
 					<li class="list-group-item d-flex justify-content-between align-items-start">
 						<?php echo $article2['articleTitle']; ?>
 						<a href="<?php 	echo BASEURL; ?>/article/detail/<?php echo $article2['id']; ?>" class="badge text-bg-primary">detail</a>		
-						<a href="<?php 	echo BASEURL; ?>/article/detail/<?php echo $article2['id']; ?>" class="badge text-bg-danger" onclick="return confirm('Delete Data?');">delete</a>		
+						<a href="<?php 	echo BASEURL; ?>/article/delete/<?php echo $article2['id']; ?>" class="badge text-bg-danger" onclick="return confirm('Delete Data?');">delete</a>		
 					</li>
 				<?php endforeach; ?>
 			</ul>		
